@@ -4,7 +4,7 @@ A lightweight Convolutional Neural Network implementation in TensorFlow/Keras fo
 
 ---
 
-## 📋 Overview
+##  Overview
 
 This project demonstrates how to:
 
@@ -15,9 +15,18 @@ This project demonstrates how to:
 
 The code is organized as a single Python script (`classifier.py`) with clearly defined functions for each step.
 
----
+ # Model Architecture
+Convolution #1: 6 filters, 5×5 kernel, ReLU activation
 
-## 🔧 Requirements
+Max Pooling #1: 2×2 window, stride 2
+
+Convolution #2: 16 filters, 5×5 kernel, ReLU activation
+
+Max Pooling #2: 2×2 window, stride 2
+
+Flatten ➔ Dense (120 units, ReLU) ➔ Dense (84 units, ReLU) ➔ Dense (10 units, Softmax)
+
+##  Requirements
 
 - Python 3.7 or higher  
 - TensorFlow ≥ 2.3.0  
